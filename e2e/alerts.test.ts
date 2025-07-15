@@ -8,11 +8,11 @@ test("handling alerts", async ({ page }) => {
     page.on("dialog", async (alert) => {
         const text = alert.defaultValue();
         console.log(text);;
-        await alert.accept("koushik");
+        await alert.accept("Jay");
     })
     await page.locator("button:has-text('Click Me')").nth(2).click();
     // expect(page.locator("id=confirm-demo")).toContainText("Cancel!")
-    expect(page.locator("id=prompt-demo")).toContainText("'koushik'");
+    expect(page.locator("id=prompt-demo")).toContainText("'Jay'");
 
 })
 

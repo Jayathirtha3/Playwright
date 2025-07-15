@@ -21,8 +21,7 @@ const capabilities = {
 };
 test("Login test demo", async () => {
 
-    const browser = await chromium.connect(`wss://cdp.lambdatest.com/playwright?capabilities=
-    ${encodeURIComponent(JSON.stringify(capabilities))}`);
+    const browser = await chromium.connect(`wss://cdp.lambdatest.com/playwright?capabilities=${encodeURIComponent(JSON.stringify(capabilities))}`);
     const context = await browser.newContext();
     const page = await context.newPage();
 

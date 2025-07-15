@@ -7,11 +7,11 @@ test("Interact with frames", async ({ page }) => {
     console.log("No.of frames: " + allframes.length);
 
     const frame = page.frameLocator("#firstFr")
-    await frame.locator("input[name='fname']").fill("Koushik");
-    await frame.locator("input[name='lname']").fill("Chatterjee");
+    await frame.locator("input[name='fname']").fill("Jay");
+    await frame.locator("input[name='lname']").fill("A M");
 
-    const innerFrame = frame.frameLocator("iframe[src='innerFrame']")
-    await innerFrame.locator("input[name='email']").fill("koushik@gmail.com")
+    const innerFrame = frame.frameLocator("iframe[src='innerframe']")
+    await innerFrame.locator("input[name='email']").fill("Jay@gmail.com")
 
     await frame.locator("input[name='fname']").fill("letcode");
 
@@ -26,9 +26,4 @@ test("Interact with frames", async ({ page }) => {
 
 
     await page.waitForTimeout(3000);
-
-
-
-
-
 })
