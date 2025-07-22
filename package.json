@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx playwright test",
-    "test:lt": "npx playwright test"
+    "test": "npx playwright test e2e/",
+    "test:lt": "npx playwright test e2e/"
   },
   "keywords": [],
   "author": "",
