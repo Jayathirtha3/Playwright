@@ -1,5 +1,6 @@
 let facebookPage: Page;
 import { expect, Page, test } from "@playwright/test";
+process.env.TEST_NAME = 'Windows';
 
 test("Interact with multiple tabs", async ({ page }) => {
 

@@ -1,5 +1,5 @@
 import { chromium, test, expect } from "@playwright/test"
-
+process.env.TEST_NAME = 'Login';
 
 // LambdaTest capabilities
 const capabilities = {

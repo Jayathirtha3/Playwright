@@ -1,5 +1,6 @@
 import { test } from "@playwright/test";
 import moment from "moment";
+process.env.TEST_NAME = 'Calender';
 
 // test("Calendar demo using fill function", async ({ page }) => {
 //     await page.goto("https://www.lambdatest.com/selenium-playground/bootstrap-date-picker-demo");

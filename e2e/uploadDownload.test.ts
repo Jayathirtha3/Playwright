@@ -1,4 +1,5 @@
 import { test } from "@playwright/test";
+process.env.TEST_NAME = 'Upload_Download';
 
 
 test("Download files", async ({ page }) => {

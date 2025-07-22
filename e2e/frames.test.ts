@@ -1,4 +1,5 @@
 import { expect, test } from "@playwright/test";
+process.env.TEST_NAME = 'Frames';
 
 test("Interact with frames", async ({ page }) => {
 

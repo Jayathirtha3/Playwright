@@ -1,4 +1,5 @@
 import { test, expect } from '@playwright/test';
+process.env.TEST_NAME = 'Recorded';
 
 test('test', async ({ page }) => {
 

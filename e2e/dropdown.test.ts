@@ -1,5 +1,5 @@
 import { test } from "@playwright/test";
-
+process.env.TEST_NAME = 'Drop Down';
 
 test("handling dropdown", async ({ page }) => {
 

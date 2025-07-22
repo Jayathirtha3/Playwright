@@ -1,5 +1,5 @@
 import { expect, test } from "@playwright/test";
-
+process.env.TEST_NAME = 'Alert tests';
 
 test("handling alerts", async ({ page }) => {
 
