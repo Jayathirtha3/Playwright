@@ -15,7 +15,7 @@ test('test', async ({ page }) => {
     await page.locator('[placeholder="E-Mail Address"]').click();
 
     // Fill [placeholder="E-Mail Address"]
-    await page.locator('[placeholder="E-Mail Address"]').fill('Jay@gmail.com');
+    await page.locator('[placeholder="E-Mail Address"]').fill('koushik350@gmail.com');
 
     // Press Tab
     await page.locator('[placeholder="E-Mail Address"]').press('Tab');
@@ -42,9 +42,9 @@ test('test', async ({ page }) => {
     await expect(page).toHaveURL('https://ecommerce-playground.lambdatest.io/index.php?route=account/account');
 
     // Click span:has-text("Logout")
-    await page.hover("//a[@data-toggle='dropdown']//span[contains(.,'My account')]")
+    //await page.hover("//a[@data-toggle='dropdown']//span[contains(.,'My account')]")
 
-    await page.locator('span:has-text("Logout")').click();
+    await page.locator('//a[contains(text()," Logout")]').click();
     await expect(page).toHaveURL('https://ecommerce-playground.lambdatest.io/index.php?route=account/logout');
 
 });
