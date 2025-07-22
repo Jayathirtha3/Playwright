@@ -22,7 +22,7 @@ export default defineConfig({
             browserName: 'Chrome',
             browserVersion: 'latest',
             platform: 'Windows 10',
-            name: 'Playwright Test',
+            name: '',
             build: 'Playwright Build',
             user: 'jayathirtha3',
             accessKey: 'LT_uuGArh2n4WJdfPQoCq8BZXmxX7dvmcvXvVL11YC6IF9Zg5Z'
