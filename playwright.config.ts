@@ -1,4 +1,5 @@
 import { defineConfig } from '@playwright/test';
+const testName = process.env.TEST_NAME || 'Playwright Default Test';
 
 export default defineConfig({
   testDir: './e2e',
@@ -22,7 +23,7 @@ export default defineConfig({
             browserName: 'Chrome',
             browserVersion: 'latest',
             platform: 'Windows 10',
-            name: 'testName',
+            name: testName,
             build: 'Playwright Build',
             user: 'jayathirtha3',
             accessKey: 'LT_uuGArh2n4WJdfPQoCq8BZXmxX7dvmcvXvVL11YC6IF9Zg5Z'
