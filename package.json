@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "npx playwright test --project=chrome",
-    "test:lt": "npx playwright test --project=\/workspace/Playwright/e2e"chrome:latest:MacOS Catalina@lambdatest\""
+    "test:lt": "npx playwright test --project=\"Catalina@lambdatest\""
   },
   "keywords": [],
   "author": "",
