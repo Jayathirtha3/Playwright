@@ -23,7 +23,7 @@ test("handling dropdown", async ({ page }) => {
     ])
 })
 
-test.only("Bootstrap dropdown", async ({ page }) => {
+test("Bootstrap dropdown", async ({ page }) => {
     await page.goto("https://www.lambdatest.com/selenium-playground/jquery-dropdown-search-demo");
     await selectCountry("India");
     await selectCountry("Denmark");
