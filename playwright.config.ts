@@ -52,7 +52,7 @@ const config: PlaywrightTestConfig = {
         //     ${encodeURIComponent(JSON.stringify(capabilities))}`
         // },
         baseURL: "https://ecommerce-playground.lambdatest.io/index.php?",
-        headless: false,
+        headless: true,
         screenshot: "on",
         video: "on",
         launchOptions: {
