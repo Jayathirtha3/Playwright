@@ -4,15 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx playwright test e2e/",
-    "test:lt": "npx playwright test e2e/"
+    "test": "npx playwright test --project=chrome",
+    "test:lt": "npx playwright test --project=\"chrome:latest:MacOS Catalina@lambdatest\""
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@playwright/test": "^1.54.1",
-    "@types/node": "^24.0.14",
+    "@playwright/test": "^1.22.2",
     "moment": "^2.29.1"
   }
 }
