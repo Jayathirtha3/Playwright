@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test:lt": "npx playwright test --project=\"chrome:latest:Windows 10@lambdatest\""
+    "test:lt": "npx playwright test tests/"
   },
   "keywords": [],
   "author": "",
