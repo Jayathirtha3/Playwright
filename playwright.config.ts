@@ -45,7 +45,7 @@ const config: PlaywrightTestConfig = {
         }
     ],
 
-    testMatch: ["pomtest/addToCartUsingFixture.test.ts"],
+    testMatch: ["tests/*"],
     use: {
         // connectOptions: {
         //     wsEndpoint: `wss://cdp.lambdatest.com/playwright?capabilities=
