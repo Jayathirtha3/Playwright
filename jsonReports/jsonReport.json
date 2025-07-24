@@ -1,5 +1,7 @@
 {
   "config": {
+    "configFile": "/workspace/Playwright/playwright.config.ts",
+    "rootDir": "/workspace/Playwright",
     "forbidOnly": false,
     "fullyParallel": false,
     "globalSetup": null,
@@ -8,58 +10,10 @@
     "grep": {},
     "grepInvert": null,
     "maxFailures": 0,
-    "metadata": {},
+    "metadata": {
+      "actualWorkers": 8
+    },
     "preserveOutput": "always",
-    "projects": [
-      {
-        "outputDir": "C:/Users/kouss/OneDrive/Desktop/learn-playwright/test-results",
-        "repeatEach": 1,
-        "retries": 0,
-        "name": "chrome:latest:MacOS Catalina@lambdatest",
-        "testDir": "C:/Users/kouss/OneDrive/Desktop/learn-playwright",
-        "testIgnore": [],
-        "testMatch": [
-          "pomtest/addToCartUsingFixture.test.ts"
-        ],
-        "timeout": 300000
-      },
-      {
-        "outputDir": "C:/Users/kouss/OneDrive/Desktop/learn-playwright/test-results",
-        "repeatEach": 1,
-        "retries": 0,
-        "name": "chrome:latest:Windows 10@lambdatest",
-        "testDir": "C:/Users/kouss/OneDrive/Desktop/learn-playwright",
-        "testIgnore": [],
-        "testMatch": [
-          "pomtest/addToCartUsingFixture.test.ts"
-        ],
-        "timeout": 300000
-      },
-      {
-        "outputDir": "C:/Users/kouss/OneDrive/Desktop/learn-playwright/test-results",
-        "repeatEach": 1,
-        "retries": 0,
-        "name": "chrome",
-        "testDir": "C:/Users/kouss/OneDrive/Desktop/learn-playwright",
-        "testIgnore": [],
-        "testMatch": [
-          "pomtest/addToCartUsingFixture.test.ts"
-        ],
-        "timeout": 300000
-      },
-      {
-        "outputDir": "C:/Users/kouss/OneDrive/Desktop/learn-playwright/test-results",
-        "repeatEach": 1,
-        "retries": 0,
-        "name": "firefox",
-        "testDir": "C:/Users/kouss/OneDrive/Desktop/learn-playwright",
-        "testIgnore": [],
-        "testMatch": [
-          "pomtest/addToCartUsingFixture.test.ts"
-        ],
-        "timeout": 300000
-      }
-    ],
     "reporter": [
       [
         "dot",
@@ -80,154 +34,984 @@
     ],
     "reportSlowTests": {
       "max": 5,
-      "threshold": 15000
+      "threshold": 300000
     },
-    "rootDir": "C:/Users/kouss/OneDrive/Desktop/learn-playwright",
     "quiet": false,
+    "projects": [
+      {
+        "outputDir": "/workspace/Playwright/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 8
+        },
+        "id": "chrome:latest:MacOS Catalina@lambdatest",
+        "name": "chrome:latest:MacOS Catalina@lambdatest",
+        "testDir": "/workspace/Playwright",
+        "testIgnore": [],
+        "testMatch": [
+          "tests/*"
+        ],
+        "timeout": 300000
+      },
+      {
+        "outputDir": "/workspace/Playwright/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 8
+        },
+        "id": "chrome:latest:Windows 10@lambdatest",
+        "name": "chrome:latest:Windows 10@lambdatest",
+        "testDir": "/workspace/Playwright",
+        "testIgnore": [],
+        "testMatch": [
+          "tests/*"
+        ],
+        "timeout": 300000
+      },
+      {
+        "outputDir": "/workspace/Playwright/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 8
+        },
+        "id": "chrome",
+        "name": "chrome",
+        "testDir": "/workspace/Playwright",
+        "testIgnore": [],
+        "testMatch": [
+          "tests/*"
+        ],
+        "timeout": 300000
+      },
+      {
+        "outputDir": "/workspace/Playwright/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 8
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/workspace/Playwright",
+        "testIgnore": [],
+        "testMatch": [
+          "tests/*"
+        ],
+        "timeout": 300000
+      }
+    ],
     "shard": null,
     "updateSnapshots": "missing",
-    "version": "1.22.2",
-    "workers": 4,
-    "webServer": null,
-    "_globalOutputDir": "C:\\Users\\kouss\\OneDrive\\Desktop\\learn-playwright",
-    "_configDir": "C:\\Users\\kouss\\OneDrive\\Desktop\\learn-playwright",
-    "_testGroupsCount": 1
+    "updateSourceMethod": "patch",
+    "version": "1.54.1",
+    "workers": 8,
+    "webServer": null
   },
   "suites": [
     {
-      "title": "pomtest\\addToCartUsingFixture.test.ts",
-      "file": "pomtest/addToCartUsingFixture.test.ts",
-      "line": 0,
+      "title": "tests/alerts.test.ts",
+      "file": "tests/alerts.test.ts",
       "column": 0,
-      "specs": [],
-      "suites": [
+      "line": 0,
+      "specs": [
         {
-          "title": "Page object test demo",
-          "file": "pomtest/addToCartUsingFixture.test.ts",
-          "line": 8,
-          "column": 6,
-          "specs": [
+          "title": "handling alerts",
+          "ok": true,
+          "tags": [
+            "lambdatest"
+          ],
+          "tests": [
             {
-              "title": "Register test_01",
-              "ok": true,
-              "tags": [],
-              "tests": [
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome:latest:Windows 10@lambdatest",
+              "projectName": "chrome:latest:Windows 10@lambdatest",
+              "results": [
                 {
-                  "timeout": 300000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectName": "chrome",
-                  "results": [
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 17650,
+                  "errors": [],
+                  "stdout": [
                     {
-                      "workerIndex": 0,
-                      "status": "passed",
-                      "duration": 7774,
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "C:\\Users\\kouss\\OneDrive\\Desktop\\learn-playwright\\test-results\\pomtest-addToCartUsingFixture-Page-object-test-demo-Register-test-01-chrome\\test-finished-1.png"
-                        }
-                      ]
+                      "text": "Enter name\n"
                     }
                   ],
-                  "status": "expected"
-                }
-              ],
-              "file": "pomtest/addToCartUsingFixture.test.ts",
-              "line": 10,
-              "column": 5
-            },
-            {
-              "title": "Login test_02",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 300000,
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-07-23T12:23:02.057Z",
                   "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectName": "chrome",
-                  "results": [
+                  "attachments": [
                     {
-                      "workerIndex": 0,
-                      "status": "passed",
-                      "duration": 9160,
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "C:\\Users\\kouss\\OneDrive\\Desktop\\learn-playwright\\test-results\\pomtest-addToCartUsingFixture-Page-object-test-demo-Login-test-02-chrome\\test-finished-1.png"
-                        },
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "C:\\Users\\kouss\\OneDrive\\Desktop\\learn-playwright\\test-results\\pomtest-addToCartUsingFixture-Page-object-test-demo-Login-test-02-chrome\\test-finished-2.png"
-                        }
-                      ]
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/workspace/Playwright/test-results/tests-alerts-handling-alerts-chrome-latest-Windows-10-lambdatest/test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/workspace/Playwright/test-results/tests-alerts-handling-alerts-chrome-latest-Windows-10-lambdatest/video.webm"
                     }
-                  ],
-                  "status": "expected"
+                  ]
                 }
               ],
-              "file": "pomtest/addToCartUsingFixture.test.ts",
-              "line": 23,
-              "column": 5
-            },
-            {
-              "title": "Add to cart test_03",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 300000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectName": "chrome",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "status": "passed",
-                      "duration": 13035,
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "C:\\Users\\kouss\\OneDrive\\Desktop\\learn-playwright\\test-results\\pomtest-addToCartUsingFixture-Page-object-test-demo-Add-to-cart-test-03-chrome\\test-finished-1.png"
-                        },
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "C:\\Users\\kouss\\OneDrive\\Desktop\\learn-playwright\\test-results\\pomtest-addToCartUsingFixture-Page-object-test-demo-Add-to-cart-test-03-chrome\\test-finished-2.png"
-                        },
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "C:\\Users\\kouss\\OneDrive\\Desktop\\learn-playwright\\test-results\\pomtest-addToCartUsingFixture-Page-object-test-demo-Add-to-cart-test-03-chrome\\test-finished-3.png"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "file": "pomtest/addToCartUsingFixture.test.ts",
-              "line": 31,
-              "column": 5
+              "status": "expected"
             }
-          ]
+          ],
+          "id": "addb81fc64a6c6200bbb-b2c046fbbec29de96e25",
+          "file": "tests/alerts.test.ts",
+          "line": 4,
+          "column": 5
+        },
+        {
+          "title": "Modal alert",
+          "ok": true,
+          "tags": [
+            "lambdatest"
+          ],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome:latest:Windows 10@lambdatest",
+              "projectName": "chrome:latest:Windows 10@lambdatest",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 11724,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-07-23T12:23:21.591Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/workspace/Playwright/test-results/tests-alerts-Modal-alert-chrome-latest-Windows-10-lambdatest/test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/workspace/Playwright/test-results/tests-alerts-Modal-alert-chrome-latest-Windows-10-lambdatest/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "addb81fc64a6c6200bbb-3e9f3579655028d9b28e",
+          "file": "tests/alerts.test.ts",
+          "line": 19,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "tests/basicInteractions.test.ts",
+      "file": "tests/basicInteractions.test.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Interaction with inputs",
+          "ok": true,
+          "tags": [
+            "lambdatest"
+          ],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome:latest:Windows 10@lambdatest",
+              "projectName": "chrome:latest:Windows 10@lambdatest",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 17432,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Please enter your Message\n"
+                    },
+                    {
+                      "text": "Before entering data: \n"
+                    },
+                    {
+                      "text": "After entering data: Hi Jay\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-07-23T12:23:02.158Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/workspace/Playwright/test-results/tests-basicInteractions-Interaction-with-inputs-chrome-latest-Windows-10-lambdatest/test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/workspace/Playwright/test-results/tests-basicInteractions-Interaction-with-inputs-chrome-latest-Windows-10-lambdatest/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e8550347d925177e1da7-ae7595618fc5427bec76",
+          "file": "tests/basicInteractions.test.ts",
+          "line": 4,
+          "column": 5
+        },
+        {
+          "title": "Sum",
+          "ok": true,
+          "tags": [
+            "lambdatest"
+          ],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome:latest:Windows 10@lambdatest",
+              "projectName": "chrome:latest:Windows 10@lambdatest",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 10047,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "667\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-07-23T12:23:21.245Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/workspace/Playwright/test-results/tests-basicInteractions-Sum-chrome-latest-Windows-10-lambdatest/test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/workspace/Playwright/test-results/tests-basicInteractions-Sum-chrome-latest-Windows-10-lambdatest/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e8550347d925177e1da7-e835631fb360183fbef0",
+          "file": "tests/basicInteractions.test.ts",
+          "line": 18,
+          "column": 5
+        },
+        {
+          "title": "Checkbox",
+          "ok": true,
+          "tags": [
+            "lambdatest"
+          ],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome:latest:Windows 10@lambdatest",
+              "projectName": "chrome:latest:Windows 10@lambdatest",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 6627,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-07-23T12:23:31.301Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/workspace/Playwright/test-results/tests-basicInteractions-Checkbox-chrome-latest-Windows-10-lambdatest/test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/workspace/Playwright/test-results/tests-basicInteractions-Checkbox-chrome-latest-Windows-10-lambdatest/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e8550347d925177e1da7-736fa8f1673fb8117192",
+          "file": "tests/basicInteractions.test.ts",
+          "line": 36,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "tests/calendar.test.ts",
+      "file": "tests/calendar.test.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Calendar demo using moment",
+          "ok": true,
+          "tags": [
+            "lambdatest"
+          ],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome:latest:Windows 10@lambdatest",
+              "projectName": "chrome:latest:Windows 10@lambdatest",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 43505,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "this month? true\n"
+                    },
+                    {
+                      "text": "this month? true\n"
+                    },
+                    {
+                      "text": "this month? true\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-07-23T12:23:02.462Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/workspace/Playwright/test-results/tests-calendar-Calendar-demo-using-moment-chrome-latest-Windows-10-lambdatest/test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/workspace/Playwright/test-results/tests-calendar-Calendar-demo-using-moment-chrome-latest-Windows-10-lambdatest/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "68c95afee124c9066c67-886c27c0bd832a34290c",
+          "file": "tests/calendar.test.ts",
+          "line": 13,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "tests/dropdown.test.ts",
+      "file": "tests/dropdown.test.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "handling dropdown",
+          "ok": true,
+          "tags": [
+            "lambdatest"
+          ],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome:latest:Windows 10@lambdatest",
+              "projectName": "chrome:latest:Windows 10@lambdatest",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 3,
+                  "status": "passed",
+                  "duration": 18687,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-07-23T12:23:02.150Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/workspace/Playwright/test-results/tests-dropdown-handling-dropdown-chrome-latest-Windows-10-lambdatest/test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/workspace/Playwright/test-results/tests-dropdown-handling-dropdown-chrome-latest-Windows-10-lambdatest/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6a3d7e996dd4874286aa-df13831e4081409f3b2e",
+          "file": "tests/dropdown.test.ts",
+          "line": 4,
+          "column": 5
+        },
+        {
+          "title": "Bootstrap dropdown",
+          "ok": true,
+          "tags": [
+            "lambdatest"
+          ],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome:latest:Windows 10@lambdatest",
+              "projectName": "chrome:latest:Windows 10@lambdatest",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 3,
+                  "status": "passed",
+                  "duration": 13349,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-07-23T12:23:22.546Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/workspace/Playwright/test-results/tests-dropdown-Bootstrap-dropdown-chrome-latest-Windows-10-lambdatest/test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/workspace/Playwright/test-results/tests-dropdown-Bootstrap-dropdown-chrome-latest-Windows-10-lambdatest/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6a3d7e996dd4874286aa-86065fdaec43d291e0bd",
+          "file": "tests/dropdown.test.ts",
+          "line": 26,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "tests/example.spec.js",
+      "file": "tests/example.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "has title",
+          "ok": true,
+          "tags": [
+            "lambdatest"
+          ],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome:latest:Windows 10@lambdatest",
+              "projectName": "chrome:latest:Windows 10@lambdatest",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 4,
+                  "status": "passed",
+                  "duration": 5993,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-07-23T12:23:02.345Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/workspace/Playwright/test-results/tests-example-has-title-chrome-latest-Windows-10-lambdatest/test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/workspace/Playwright/test-results/tests-example-has-title-chrome-latest-Windows-10-lambdatest/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6ad0ca930a9848b0b896-3d72ff757feecadc5dc9",
+          "file": "tests/example.spec.js",
+          "line": 4,
+          "column": 5
+        },
+        {
+          "title": "get started link",
+          "ok": true,
+          "tags": [
+            "lambdatest"
+          ],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome:latest:Windows 10@lambdatest",
+              "projectName": "chrome:latest:Windows 10@lambdatest",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 4,
+                  "status": "passed",
+                  "duration": 7598,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-07-23T12:23:09.846Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/workspace/Playwright/test-results/tests-example-get-started-link-chrome-latest-Windows-10-lambdatest/test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/workspace/Playwright/test-results/tests-example-get-started-link-chrome-latest-Windows-10-lambdatest/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6ad0ca930a9848b0b896-9f1c97aee06e554efdf9",
+          "file": "tests/example.spec.js",
+          "line": 11,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "tests/frames.test.ts",
+      "file": "tests/frames.test.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Interact with frames",
+          "ok": true,
+          "tags": [
+            "lambdatest"
+          ],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome:latest:Windows 10@lambdatest",
+              "projectName": "chrome:latest:Windows 10@lambdatest",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 5,
+                  "status": "passed",
+                  "duration": 23989,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "No.of frames: 16\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-07-23T12:23:02.047Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/workspace/Playwright/test-results/tests-frames-Interact-with-frames-chrome-latest-Windows-10-lambdatest/test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/workspace/Playwright/test-results/tests-frames-Interact-with-frames-chrome-latest-Windows-10-lambdatest/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ee77907c2abffffa1fe6-64179131d7c622fb53dd",
+          "file": "tests/frames.test.ts",
+          "line": 4,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "tests/login.test.ts",
+      "file": "tests/login.test.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Login test demo",
+          "ok": true,
+          "tags": [
+            "lambdatest"
+          ],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome:latest:Windows 10@lambdatest",
+              "projectName": "chrome:latest:Windows 10@lambdatest",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 6,
+                  "status": "passed",
+                  "duration": 10195,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-07-23T12:23:02.357Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ef85df6096d4739f2c52-e30caf5e6fa54f30002d",
+          "file": "tests/login.test.ts",
+          "line": 22,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "tests/recorded.test.ts",
+      "file": "tests/recorded.test.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "test",
+          "ok": true,
+          "tags": [
+            "lambdatest"
+          ],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome:latest:Windows 10@lambdatest",
+              "projectName": "chrome:latest:Windows 10@lambdatest",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "parallelIndex": 7,
+                  "status": "passed",
+                  "duration": 21552,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-07-23T12:23:02.166Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/workspace/Playwright/test-results/tests-recorded-test-chrome-latest-Windows-10-lambdatest/test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/workspace/Playwright/test-results/tests-recorded-test-chrome-latest-Windows-10-lambdatest/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "aeb89487b60598200775-096c52a074f4db43611c",
+          "file": "tests/recorded.test.ts",
+          "line": 4,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "tests/uploadDownload.test.ts",
+      "file": "tests/uploadDownload.test.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Download files",
+          "ok": true,
+          "tags": [
+            "lambdatest"
+          ],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome:latest:Windows 10@lambdatest",
+              "projectName": "chrome:latest:Windows 10@lambdatest",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 6,
+                  "status": "passed",
+                  "duration": 13421,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-07-23T12:23:12.843Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/workspace/Playwright/test-results/tests-uploadDownload-Download-files-chrome-latest-Windows-10-lambdatest/test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/workspace/Playwright/test-results/tests-uploadDownload-Download-files-chrome-latest-Windows-10-lambdatest/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "bff505410ff9353f2355-6b470f325cccfbe6026b",
+          "file": "tests/uploadDownload.test.ts",
+          "line": 5,
+          "column": 5
+        },
+        {
+          "title": "Upload files",
+          "ok": true,
+          "tags": [
+            "lambdatest"
+          ],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome:latest:Windows 10@lambdatest",
+              "projectName": "chrome:latest:Windows 10@lambdatest",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 6,
+                  "status": "passed",
+                  "duration": 6419,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "\u001b[33mtrue\u001b[39m\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-07-23T12:23:26.892Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/workspace/Playwright/test-results/tests-uploadDownload-Upload-files-chrome-latest-Windows-10-lambdatest/test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/workspace/Playwright/test-results/tests-uploadDownload-Upload-files-chrome-latest-Windows-10-lambdatest/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "bff505410ff9353f2355-047fa4a67c02ee043169",
+          "file": "tests/uploadDownload.test.ts",
+          "line": 21,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "tests/windows.test.ts",
+      "file": "tests/windows.test.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Interact with multiple tabs",
+          "ok": true,
+          "tags": [
+            "lambdatest"
+          ],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome:latest:Windows 10@lambdatest",
+              "projectName": "chrome:latest:Windows 10@lambdatest",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 4,
+                  "status": "passed",
+                  "duration": 18468,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "No.of tabs: 3\n"
+                    },
+                    {
+                      "text": "https://www.lambdatest.com/selenium-playground/window-popup-modal-demo\n"
+                    },
+                    {
+                      "text": "https://www.facebook.com/lambdatest/\n"
+                    },
+                    {
+                      "text": "https://x.com/intent/follow?screen_name=Lambdatesting\n"
+                    },
+                    {
+                      "text": "LambdaTest \n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-07-23T12:23:17.471Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/workspace/Playwright/test-results/tests-windows-Interact-with-multiple-tabs-chrome-latest-Windows-10-lambdatest/test-finished-2.png"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/workspace/Playwright/test-results/tests-windows-Interact-with-multiple-tabs-chrome-latest-Windows-10-lambdatest/test-finished-1.png"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/workspace/Playwright/test-results/tests-windows-Interact-with-multiple-tabs-chrome-latest-Windows-10-lambdatest/test-finished-3.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/workspace/Playwright/test-results/tests-windows-Interact-with-multiple-tabs-chrome-latest-Windows-10-lambdatest/video.webm"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/workspace/Playwright/test-results/tests-windows-Interact-with-multiple-tabs-chrome-latest-Windows-10-lambdatest/video-1.webm"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/workspace/Playwright/test-results/tests-windows-Interact-with-multiple-tabs-chrome-latest-Windows-10-lambdatest/video-2.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "98c21ebe87e39c315e15-f830dbd83be0823deac2",
+          "file": "tests/windows.test.ts",
+          "line": 5,
+          "column": 5
         }
       ]
     }
   ],
-  "errors": []
+  "errors": [],
+  "stats": {
+    "startTime": "2025-07-23T12:22:57.841Z",
+    "duration": 49517.876000000004,
+    "expected": 16,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
 }
